@@ -112,35 +112,5 @@ router.post('/login', async (req, res) => {
 });
 
 
-// router.post('/login', async (req, res) => {
-//     const { email, password } = req.body;
-
-//     // Check if email and password are provided
-//     if (!email || !password) {
-//         return res.status(400).json({ error: 'Email and password are required' });
-//     }
-
-//     try {
-//         // Find the user by email
-//         const user = await User.findOne({ email });
-//         if (!user) {
-//             return res.status(401).json({ error: 'Invalid email or password' }); // Email not found
-//         }
-
-//         // Compare provided password with hashed password in the database
-//         const isPasswordValid = await bcrypt.compare(password, user.password);
-//         if (!isPasswordValid) {
-//             return res.status(401).json({ error: 'Invalid email or password' }); // Incorrect password
-//         }
-
-//         // Generate JWT token
-//         const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '10h' });
-
-//         res.status(200).json({ message: 'Login successful', token });
-//     } catch (err) {
-//         console.error('Error during login:', err);
-//         res.status(500).json({ error: 'An error occurred while trying to log in' });
-//     }
-//     });
 
 module.exports = router;
