@@ -1,4 +1,4 @@
-const Survey = require('../survey-backend/models/survey');
+const Survey = require('../models/survey');
 
 exports.createSurvey = async (req, res) => {
     try {

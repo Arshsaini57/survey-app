@@ -1,0 +1,100 @@
+/* Navbar Wrapper */
+/* Centers the Cognify heading and the navbar container */
+.navbar-wrapper {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Navbar Heading */
+/* Styles the "Cognify" title above the navbar */
+.navbar-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+/* Navbar Container */
+/* The main container for the navigation bar; reduced width with auto margins */
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  background-color: #1e3a8a;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  width: 90%; /* Reduced the width */
+  margin: 0 auto; /* Centered the container */
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+}
+
+/* Navbar */
+/* Flex container for all the navigation links and the search box */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Navbar Link */
+/* Styles for each individual navigation link */
+.navbar-link {
+  flex: 1;
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem 0;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out; /* For popup hover effect */
+}
+
+/* Popup Hover Effect */
+/* Scales the link slightly when hovered */
+.navbar-link:hover {
+  transform: scale(1.05); /* Enlarges the block slightly */
+  background-color: #071f63;
+  border-radius: 10px;
+}
+
+/* Navbar Search */
+/* Styles the search box with a curved input and icon */
+.navbar-search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.5rem;
+}
+
+/* Search Input */
+/* Styles the text box inside the search component */
+.navbar-search-input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  width: 100px;
+}
+
+/* Search Icon */
+/* Styles the search icon inside the search box */
+.navbar-search-icon {
+  color: #1e3a8a;
+  margin-left: 0.25rem;
+}
+
+/* Logout Button */
+/* Special styles for the logout button */
+.navbar-link.logout {
+  background-color: #e53e3e;
+  border-radius: 0.25rem;
+}
+
+/* Logout Button Hover */
+/* Applies the popup hover effect to the logout button */
+.navbar-link.logout:hover {
+  transform: scale(1.05);
+}

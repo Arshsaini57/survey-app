@@ -24,5 +24,26 @@ const authMiddleware = (req, res, next) => {
 module.exports = authMiddleware;
 
 
+// Middleware to verify JWT
+const authenticateJWT = (req, res, next) => {
+  const token = req.headers['authorization']; // Retrieve the token from the header
 
-module.exports = authMiddleware;
+  if (!token) {
+    return res.status(401).json({ error: 'No token provided' });
+  }
+
+  // Remove "Bearer " prefix if present
+  const bearerToken = token.split(' ')[1]; // Assumes "Bearer <token>"
+  
+  jwt.verify(bearerToken, process.env.JWT_SECRET, (err, decoded) => {
+    if (err) {
+      return res.status(401).json({ error: 'Invalid or expired token' });
+    }
+
+    // If token is valid, attach the decoded user data to the request object
+    req.user = decoded;  // Attach user data (e.g., userId) to the request object
+    next();  // Proceed to the next middleware or route handler
+  });
+};
+
+module.exports = authenticateJWT;

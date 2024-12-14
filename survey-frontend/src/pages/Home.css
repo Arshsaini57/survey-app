@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9fafb;
+  color: #4b5563;
+  margin: 0;
+  padding: 0;
+}
+
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header Section */
+.home-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.home-page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e40af;
+}
+
+.home-page-tagline {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #1e40af;
+  color: white;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
+}
+
+.home-page-start-button {
+  background-color: #fbbf24;
+  color: #1e40af;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.home-page-start-button:hover {
+  transform: scale(1.05);
+  background-color: #f59e0b;
+}
+
+/* Features Section */
+.home-page-features {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.home-page-feature {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.home-page-feature:hover {
+  transform: translateY(-5px);
+}
+
+
+
+.home-page-feature-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Additional Features */
+.additional-features {
+  text-align: center;
+}
+
+.additional-feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.additional-feature-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.feature-card {
+  background-color: #f4f8fb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  flex: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+}
